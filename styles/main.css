@@ -48,7 +48,7 @@ a {
 .nav {
     flex-grow: 1;
     display: flex;
-    gap: 46px;
+    gap: 47px;
 }
 
 .nav-link {
@@ -126,7 +126,7 @@ a {
     padding-left: 0;
     color: rgba(var(--light-rgb), .5);
     font-size: 15px;
-    margin-top: 0;
+    margin-top: 2px;
     margin-bottom: 0;
 }
 
@@ -154,6 +154,8 @@ a {
     font-size: 79px;
     color: var(--light);
     text-transform: capitalize;
+    margin-top: 18px;
+    margin-bottom: 19px;
 }
 
 .hero-description {
