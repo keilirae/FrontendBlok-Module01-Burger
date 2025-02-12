@@ -186,20 +186,16 @@ a {
 }
 
 .banner-title {
-    position: relative;
     font-family: var(--nunito-sans);
     font-weight: 900;
     font-size: 60px;
     color: var(--light);
     margin: 0 auto;
-    padding-top: 34px;
+    line-height: 76px;
 }
 
 .banner-title span {
     display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 95px;
     height: 28px;
     font-family: var(--open-sans);
@@ -213,7 +209,8 @@ a {
 }
 
 .banner-description {
-    width: 353px;
+    width: 100%;
+    max-width: 353px;
     font-family: var(--open-sans);
     font-weight: 400;
     font-size: 15px;
