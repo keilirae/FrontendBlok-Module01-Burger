@@ -234,3 +234,138 @@ a {
     background-color: var(--accent-light);
     margin-top: 15px;
 }
+
+.banner-btn:hover {
+    background-color: var(--accent-dark);
+    color: var(--light);
+    cursor: pointer;
+}
+
+
+/* Menu */
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 34px;
+}
+
+.menu-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+.menu-header select {
+    border: 1px solid #dedede;
+    border-radius: 22px;
+    width: 279px;
+    height: 44px;
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--dark);
+    padding-left: 30px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    appearance: none;
+    /*Стрелка */
+    background-image: url(../images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 29px center;
+}
+
+.menu-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 52px 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-thumb {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-thumb img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.menu-name {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: var(--nunito-sans);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 127%;
+    text-align: center;
+    color: var(--dark);
+}
+
+.menu-price {
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: rgba(var(--dark), 0.5);
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.menu-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--accent-light);
+    border-color: var(--accent-light);
+    width: 152px;
+    height: 38px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: var(--dark);
+    padding: 0;
+}
+
+.menu-btn-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/menu-cart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-5px);
+}
+
+.menu-btn:hover {
+    background-color: var(--accent-dark);
+    color: var(--light);
+    cursor: pointer;
+}
