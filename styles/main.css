@@ -9,6 +9,8 @@
     --light-rgb: 255, 255, 255;
     --dark-rgb: 68, 55, 55;
 
+    --tr: 0.3s;
+
 }
 
 body {
@@ -69,10 +71,12 @@ a {
     height: 3px;
     background-color: transparent;
     border-radius: 1px;
+    transition: var(--tr);
 }
 
 .nav-link:hover::after {
     background-color: var(--accent-light);
+    transition: var(--tr);
 }
 
 .cart {
@@ -84,6 +88,7 @@ a {
     font-size: 15px;
     position: relative;
 }
+
 
 .cart::before {
     content: '';
@@ -108,6 +113,15 @@ a {
     position: absolute;
     left: 17px;
     bottom: 0;
+}
+
+.cart .cart-count {
+    transition: var(--tr);
+}
+
+.cart:hover .cart-count {
+    transform: scale(1.1);
+    transition: var(--tr);
 }
 
 /* hero */
@@ -147,10 +161,12 @@ a {
 
 .breadcrumbs-link {
     color: rgba(var(--light-rgb), .5);
+    transition: var(--tr);
 }
 
 .breadcrumbs-link:hover {
     color: var(--accent-light);
+    transition: var(--tr);
 }
 
 .hero-title {
@@ -234,12 +250,14 @@ a {
     border-radius: 5px;
     background-color: var(--accent-light);
     margin-top: 15px;
+    transition: var(--tr);
 }
 
 .banner-btn:hover {
     background-color: var(--accent-dark);
     color: var(--light);
     cursor: pointer;
+    transition: var(--tr);
 }
 
 
@@ -353,6 +371,7 @@ a {
     text-transform: uppercase;
     color: var(--dark);
     padding: 0;
+    transition: var(--tr);
 }
 
 .menu-btn-icon {
@@ -369,6 +388,7 @@ a {
     background-color: var(--accent-dark);
     color: var(--light);
     cursor: pointer;
+    transition: var(--tr);
 }
 
 /* Footer */
@@ -420,8 +440,14 @@ a {
     font-size: 15px;
     line-height: 160%;
     color: rgba(var(--light-rgb), 0.9);
-
+    transition: var(--tr);
 }
+
+.footer-nav-link:hover {
+    color: var(--accent-light);
+    transition: var(--tr);
+}
+
 
 .footer-list {
     list-style: none;
@@ -452,4 +478,10 @@ a {
     text-transform: uppercase;
     color: var(--accent-light);
     margin-bottom: 7px;
+    transition: var(--tr);
+}
+
+.footer-tel:hover {
+    color: rgba(var(--light-rgb), 0.9);
+    transition: var(--tr);
 }
