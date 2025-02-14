@@ -402,11 +402,24 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 10px;
     padding-top: 117px;
 }
 
 .footer-item {
     line-height: 190%;
+}
+
+.footer-item-one {
+    flex-basis: 20%;
+}
+
+.footer-item-two {
+    flex-basis: 24.4%;
+}
+
+.footer-item-three {
+    flex-basis: 15.2%;
 }
 
 .footer-logo {
