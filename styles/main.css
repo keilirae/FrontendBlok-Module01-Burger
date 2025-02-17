@@ -124,6 +124,38 @@ a {
     transition: var(--tr);
 }
 
+.button-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: var(--dark);
+    font-size: 14px;
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: var(--accent-light);
+    border: none;
+    border-radius: 5px;
+    transition: var(--tr);
+}
+
+.button-up:hover {
+    background-color: var(--accent-dark);
+    color: var(--light);
+    cursor: pointer;
+    transition: var(--tr);
+}
+
+.button-up.hidden {
+    opacity: 0;
+}
+
+.banner-btn.visible {
+    opacity: 1;
+}
+
 /* hero */
 
 .hero {
@@ -243,12 +275,11 @@ a {
 
 .banner-btn {
     display: block;
-    width: 170px;
-    height: 58px;
+    max-width: 170px;
+    max-height: 58px;
     font-family: var(--nunito-sans);
     font-weight: 700;
     font-size: 14px;
-    line-height: 129%;
     text-transform: uppercase;
     text-align: center;
     color: var(--dark);
@@ -256,6 +287,7 @@ a {
     background-color: var(--accent-light);
     margin-top: 15px;
     transition: var(--tr);
+    padding: 20px 0;
 }
 
 .banner-btn:hover {
