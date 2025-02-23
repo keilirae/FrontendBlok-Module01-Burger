@@ -44,6 +44,17 @@ a {
     padding-bottom: 26px;
 }
 
+.burger-menu {
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/burger-menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+}
+
 .logo {
     display: block;
     width: 176px;
@@ -749,4 +760,110 @@ a {
         padding-top: 62px;
         padding-bottom: 71px;
     }
+}
+
+
+
+@media (max-width:730px) {
+    .header-wrapper {
+        gap: 21px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .logo {
+        width: 116px;
+        height: 37px;
+        flex-grow: 1;
+    }
+
+    .nav._modal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .modal {
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff8dc;
+        padding: 40px 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-align: center;
+        transition: var(--tr);
+    }
+
+    .modal-close {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        margin-top: 30px;
+        margin-bottom: 13px;
+    }
+
+    .hero-description {
+        color: #FAF9F9;
+        font-size: 12px;
+        line-height: 167%;
+        width: 100%;
+        max-width: 258px;
+    }
+
+    .breadcrumbs {
+        display: flex;
+
+        font-size: 14px;
+    }
+
+    .banner-wrapper {
+        padding: 35px 16px;
+    }
+
+    .banner {
+        margin-top: 33px;
+    }
+
+    .banner-btn {
+        max-width: 196px;
+        margin-top: 20px;
+    }
+
+    .banner-description {
+        max-width: 222px;
+        font-size: 14px;
+    }
+
 }
